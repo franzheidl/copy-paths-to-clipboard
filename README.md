@@ -1,5 +1,7 @@
 #Copy Paths to Clipboard
 
+![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_paths.png)
+
 
 Workflow for Alfred 2 to copy the paths of your current files and Documents to the clipboard in a variety of formats: 
 
@@ -11,11 +13,13 @@ Workflow for Alfred 2 to copy the paths of your current files and Documents to t
 All options (except newline-separation) are available as File Actions also.
 
 ## Usage
-___
 
 Invoke the scriptfilter by typing **`paths`**. If you are in Finder, the path(s) of your current Finder item(s) or selection will be copied to the clipboard, if you're in an other (document-based) application the path of your frontmost document will be copied. The scriptfilter will give you feedback as to how exactly your path will be copied upon actioning your input in the subtitle.
 
 ### Options
+
+![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_s_q_n.png)
+
 By default and without using any of the options, paths will be copied as as-is slash-delimited POSIX paths:
 
 	/Users/UserName/Documents/File.txt
@@ -55,6 +59,8 @@ The scriptfilter subtitle will update the path as it will be copied as per your 
 ### File Actions
 
 This Workflow also adds File Actions for all the options above except newline-separation. Each of these File Actions accept multiple items (use [alt]-[arrow-up] to add an item to your selection, [alt]-[arrow-right] to display File Actions for your selection of multiple items).
+
+![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_actions.png)
 
 
 ### Known Issues
