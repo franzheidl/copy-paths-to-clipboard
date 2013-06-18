@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Copy Paths to Clipboard
 # Workflow For Alfred 2
 # Franz Heidl 2013
@@ -12,7 +14,7 @@ from AlFeedback import Feedback
 
 def main(q=False):
     
-    paths = ((subprocess.check_output(['osascript', 'path_target_posix.applescript'])).strip())
+    paths = ((subprocess.check_output(['osascript', 'path_target_posix.applescript'])).strip()).decode("utf-8")
     f_icon_name = "copypaths"
     
     if paths != "":
@@ -23,7 +25,7 @@ def main(q=False):
             if "hfs" in q:
                 f_title = "Copy HFS Path as:"
                 f_icon_name += "_hfs"
-                paths = ((subprocess.check_output(['osascript', 'posix_to_hfs.applescript', paths])).strip())
+                paths = ((subprocess.check_output(['osascript', 'posix_to_hfs.applescript', paths])).strip()).decode("utf-8")
                 if "-q" in q:
                     f_icon_name += "_quoted"
                     paths = p.quotedPaths(paths, "hfs")

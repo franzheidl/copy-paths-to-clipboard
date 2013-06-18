@@ -63,8 +63,10 @@ This Workflow also adds File Actions for all the options above except newline-se
 ![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_actions.png)
 
 
-### Known Issues
-The Scriptfilter currently does not support paths containing non-ascii characters. Probably later if I can get my head round this stuff. File Actions should work fine though.
+### Changelog
+######*** June 18, 2013***
+
+Add support for paths containing non-ASCII/Unicode characters in the scriptfilter (use quoted option `-q` if you're copying such paths for the Terminal)
 
 
 ## License

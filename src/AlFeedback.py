@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # AlFeedback
 # Simple scriptfilter feedback for Alfred 2.
 # Franz Heidl 2013
@@ -55,5 +57,5 @@ class Feedback:
         return time.strftime('%Y-%m-%d-%H%M%S%Z')
     
     def __repr__(self):
-        return eTree.tostring(self.feedback)
+        return eTree.tostring(self.feedback, encoding="utf-8")
      
