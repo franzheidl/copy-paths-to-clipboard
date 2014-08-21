@@ -1,6 +1,6 @@
 #Copy Paths to Clipboard
 
-![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_paths.png)
+![Copy Paths to Clipboard Screenshot](screenshots/copypaths_paths.png)
 
 
 Workflow for Alfred 2 to copy the paths of your current files and Documents to the clipboard in a variety of formats: 
@@ -18,7 +18,7 @@ Invoke the scriptfilter by typing **`paths`**. If you are in Finder, the path(s)
 
 ### Options
 
-![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_s_q_n.png)
+![Copy Paths to Clipboard Screenshot](screenshots/copypaths_s_q_n.png)
 
 By default and without using any of the options, paths will be copied as as-is slash-delimited POSIX paths:
 
