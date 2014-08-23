@@ -64,7 +64,12 @@ This Workflow also adds File Actions for all the options above except newline-se
 
 
 ### Changelog
-######*** June 18, 2013***
+
+######***August 23, 2014***
+
+Improve stability for applications other than Finder
+
+######***June 18, 2013***
 
 Add support for paths containing non-ASCII/Unicode characters in the scriptfilter (use quoted option `-q` if you're copying such paths for the Terminal)
 
