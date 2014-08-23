@@ -60,7 +60,7 @@ The scriptfilter subtitle will update the path as it will be copied as per your 
 
 This Workflow also adds File Actions for all the options above except newline-separation. Each of these File Actions accept multiple items (use [alt]-[arrow-up] to add an item to your selection, [alt]-[arrow-right] to display File Actions for your selection of multiple items).
 
-![Copy Paths to Clipboard Screenshot](http://github.com/franzheidl/copy-paths-to-clipboard/raw/master/screenshots/copypaths_actions.png)
+![Copy Paths to Clipboard Screenshot](screenshots/copypaths_actions.png)
 
 
 ### Changelog
