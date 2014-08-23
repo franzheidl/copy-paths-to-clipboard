@@ -43,7 +43,13 @@ on run
 						try
 							set theDoc to value of attribute "AXDocument" of window x
 							set theFile to do shell script "php -r 'echo urldecode(\"" & theDoc & "\");'"
-							set theTarget to my doSed(theFile, "s|file://localhost\\(.*\\)|\\1|")
+							
+							if theFile starts with "file://localhost" then
+								set theTarget to my doSed(theFile, "s|file://localhost\\(.*\\)|\\1|")
+							else
+								set theTarget to "/" & my doSed(theFile, "s|file:///\\(.*\\)|\\1|")
+							end if
+							
 							exit repeat
 						end try
 					end repeat
