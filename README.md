@@ -5,7 +5,7 @@
 
 Workflow for Alfred 2 to copy the paths of your current files and Documents to the clipboard in a variety of formats: 
 
-* POSIX or HFS paths 
+* POSIX, HFS paths and file URLs
 * '~/'-shortened POSIX paths
 * quoted paths
 * comma- or newline-separated.
@@ -24,9 +24,13 @@ By default and without using any of the options, paths will be copied as as-is s
 
 	/Users/UserName/Documents/File.txt
 
-**`hfs`** copies your path as an HFS path.
+**`-hfs`** copies your path as an HFS path.
 	
 	Macintosh HD:Users:UserName:Documents:File.txt
+	
+**`-url`** copies url-encoded file urls
+
+	file:///Users/franz/Documents/File.txt
 
 
 **`-s`** '~/'-shortens paths under user home. Applies to POSIX paths only.
@@ -64,6 +68,10 @@ This Workflow also adds File Actions for all the options above except newline-se
 
 
 ### Changelog
+
+######***November 15, 2014***
+
+Add option to copy as file urls, update icons to be slightly more Yosemite-like, change hfs option to '-hfs' (incl. the leading hyphen) to be consistent with the other options
 
 ######***August 23, 2014***
 

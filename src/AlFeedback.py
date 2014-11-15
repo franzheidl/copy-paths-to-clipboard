@@ -11,19 +11,19 @@ from xml.etree import ElementTree as eTree
 import time
 
 class Feedback:
-    
+
     def __init__(self, *items):
         self.feedback = eTree.Element('items')
         # Add items on init, expects list of dicts representing on item each:
         if items:
             for item in items:
                 self.addItem(**item)
-        
-        
+
+
     def addItem(self, **kwargs):
         # Create Item
         item = eTree.SubElement(self.feedback, 'item')
-        
+
         # Set Item Attributes
         if 'valid' in kwargs.keys():
             item.set('valid', kwargs['valid'])
@@ -38,7 +38,7 @@ class Feedback:
                 item.set('uid', self.timestamp())
             else:
                 item.set('uid', kwargs['uid'])
-            
+
         # Create Item Elements
         if 'title' in kwargs.keys():
             title = eTree.SubElement(item, 'title')
@@ -55,7 +55,6 @@ class Feedback:
 
     def timestamp(self):
         return time.strftime('%Y-%m-%d-%H%M%S%Z')
-    
+
     def __repr__(self):
         return eTree.tostring(self.feedback, encoding="utf-8")
-     
