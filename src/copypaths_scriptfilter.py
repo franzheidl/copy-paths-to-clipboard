@@ -15,13 +15,13 @@ from urllib import unquote
 
 def main(q=False):
 
-  paths = ((subprocess.check_output(['osascript', 'allpaths.applescript'])).strip()).decode("utf-8") # returns file urls string
+  paths = ((subprocess.check_output(['osascript', 'allpaths.applescript'])).strip()) # returns file urls string
   f_icon_name = "copypaths"
 
   if paths != "":
     p = CopyAllPaths(paths) #--> file ulrs array
     f_title = "Copy POSIX Paths as:"
-    posixPaths = ((subprocess.check_output(['osascript', 'fileurl_to_posix.applescript', paths])).strip()).decode("utf-8")
+    posixPaths = ((subprocess.check_output(['osascript', 'fileurl_to_posix.applescript', paths])).strip())
     
 
     if q:
@@ -33,16 +33,16 @@ def main(q=False):
       elif "-hfs" in q:
           f_title = "Copy HFS Paths as:"
           f_icon_name += "_hfs"
-          paths = ((subprocess.check_output(['osascript', 'fileurl_to_hfs.applescript', paths])).strip()).decode("utf-8")
-          paths = unquote(paths)
+          paths = ((subprocess.check_output(['osascript', 'fileurl_to_hfs.applescript', paths])).strip())
+          paths = unquote(paths).decode('utf-8')
           if "-q" in q:
               paths = p.quotedPaths(paths, "hfs")
 
       else:
           f_icon_name += "_posix"
-          paths = unquote(posixPaths)
+          paths = unquote(posixPaths).decode('utf-8')
           if "-s" in q:
-              paths = p.shortPaths()
+              paths = unquote(p.shortPaths()).decode('utf-8')
               f_icon_name += "_short"
       
       if "-q" in q:
@@ -55,8 +55,8 @@ def main(q=False):
         
     else:
       f_icon_name += "_posix"
-      paths = unquote(posixPaths)
-      
+      paths = unquote(posixPaths).decode('utf-8')
+
     f_sub = paths
     f_valid = "yes"
 
