@@ -10,7 +10,7 @@ on run(q)
     if aTarget starts with "file://localhost" then
       set aTarget to my doSed(aTarget, "s|file://localhost\\(.*\\)|\\1|")
     else
-      set aTarget to my doSed(aTarget, "s|file:///\\(.*\\)|\\1|")
+      set aTarget to my doSed(aTarget, "s|file://\\(.*\\)|\\1|")
     end if
     set theTargets to theTargets & aTarget
   end repeat
