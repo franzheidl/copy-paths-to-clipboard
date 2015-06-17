@@ -69,6 +69,12 @@ This Workflow also adds File Actions for all the options above except newline-se
 
 ### Changelog
 
+######***June 17, 2015***
+
+Merged two PRs:
+* Add missing leading slash to POSIX paths
+* Fix unicode paths
+
 ######***November 15, 2014***
 
 Add option to copy as file urls, update icons to be slightly more Yosemite-like, change hfs option to '-hfs' (incl. the leading hyphen) to be consistent with the other options
