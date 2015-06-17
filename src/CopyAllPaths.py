@@ -39,7 +39,7 @@ class CopyAllPaths:
     def posixPaths(self):
         pp = ""
         for a in self.urls:
-            p = subprocess.check_output(["osascript", "fileurl_to_posix.applescript", a]).strip().decode("utf-8")
+            p = subprocess.check_output(["osascript", "fileurl_to_posix.applescript", a]).strip()
             if pp != "":
                 pp += ", "
             pp += p
