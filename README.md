@@ -1,4 +1,4 @@
-#Copy Paths to Clipboard
+# Copy Paths to Clipboard
 
 ![Copy Paths to Clipboard Screenshot](screenshots/copypaths_paths.png)
 
@@ -69,28 +69,28 @@ This Workflow also adds File Actions for all the options above except newline-se
 
 ### Changelog
 
-######***June 17, 2015***
+###### ***June 17, 2015***
 
 Merged two PRs:
 * Add missing leading slash to POSIX paths
 * Fix unicode paths
 
-######***November 15, 2014***
+###### ***November 15, 2014***
 
 Add option to copy as file urls, update icons to be slightly more Yosemite-like, change hfs option to '-hfs' (incl. the leading hyphen) to be consistent with the other options
 
-######***August 23, 2014***
+###### ***August 23, 2014***
 
 Improve stability for applications other than Finder
 
-######***June 18, 2013***
+###### ***June 18, 2013***
 
 Add support for paths containing non-ASCII/Unicode characters in the scriptfilter (use quoted option `-q` if you're copying such paths for the Terminal)
 
 
 ## License
 
-###The MIT License (MIT)
+### The MIT License (MIT)
 
 
 Copyright (c) 2013 - 2014 Franz Heidl
