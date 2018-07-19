@@ -3,7 +3,7 @@
 ![Copy Paths to Clipboard Screenshot](screenshots/copypaths_paths.png)
 
 
-Workflow for Alfred 2 to copy the paths of your current files and Documents to the clipboard in a variety of formats: 
+Workflow for Alfred 2 and 3 to copy the paths of your current files and Documents to the clipboard in a variety of formats: 
 
 * POSIX, HFS paths and file URLs
 * '~/'-shortened POSIX paths
